@@ -14,7 +14,7 @@ $home_url = get_home_url();
 </div>
 <div class="container">
 	<div class="row inr text-center">
-		<p>指定されたページまたはファイルは存在しません。<br>
+		<p>指定されたページまたはファイルは存在しません<br>
 		<br>
 		URL、ファイル名にタイプミスがないかご確認ください。<br>
 		指定されたページは削除されたか、移動した可能性があります。</p>
