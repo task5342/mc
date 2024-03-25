@@ -1,0 +1,128 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+projects: ["radicodeinc/jikorikai-backlog"]
+assignees:
+  - RintaroTawara, task5342
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグ報告ありがとうございます。迅速に解決するために以下の項目に記入をお願いします。
+  - type: textarea
+    id: overview
+    attributes:
+      label: 概要・事象
+      description: どのようなバグが発生したか具体的に記入してください
+      placeholder: 
+    validations:
+      required: true
+  - type: textarea
+    id: movie
+    attributes:
+      label: スクリーンショット、動画
+      description:
+      バグの挙動やコンソールのエラーが確認できるスクリーンショットや動画のURLを入力してください。コンソールを開く方法：(Chrome) https://gyazo.com/b0e1c2c79278997ff6a5472227fdd132
+      placeholder: 
+    validations:
+      required: true
+  - type: input
+    id: related-issues
+    attributes:
+      label: 関連issue
+      description: 関連issueがあればURLを記入してください
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: reproduction-procedure
+    attributes:
+      label: 再現手順
+      description: そのような操作を行えばバグが再現できるか手順を記入してください
+    validations:
+      required: true
+  - type: textarea
+    id: problem-if-not-fixed
+    attributes:
+      label: 修正しないと、どう困るのか
+      description: 修正しないと、どう困るのかを記入してください
+      placeholder: XXXが入力できないため、XXXができなくなる
+    validations:
+      required: true
+  - type: textarea
+    id: causes
+    attributes:
+      label: 原因
+      description: 原因と想定される内容を記入してください
+      placeholder: 
+    validations:
+      required: false
+  - type: textarea
+    id: proposed-fix
+    attributes:
+      label: 修正案
+      description: 
+      placeholder: 
+    validations:
+      required: true
+  - type: input
+    id: user-id
+    attributes:
+      label: ユーザーID
+      description: バグが発生したユーザーのIDを入力してください
+      placeholder: 
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: バグが発生したページのURLを入力してください
+      placeholder: 
+    validations:
+      required: true
+  - type: dropdown
+    id: device
+    attributes:
+      label: デバイス
+      description: どのデバイスで発生しているか選択してください
+      options:
+        - パソコン
+        - タブレット
+        - スマートフォン
+        - 確認中
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: device-version
+    attributes:
+      label: デバイスのOS/バージョン
+      description: デバイスのOS、バージョンを記入してください。確認中の場合は、確認中と記入してください
+      placeholder: 
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: ブラウザ
+      description: バグが発生したブラウザを選択してください
+      multiple: true
+      options:
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Firefox
+        - 確認中
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: ブラウザのバージョン
+      description: ブラウザのバージョンを記入してください。確認中の場合は、確認中と記入してください
+      placeholder: 
+    validations:
+      required: true
